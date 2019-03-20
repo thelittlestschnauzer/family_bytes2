@@ -10,9 +10,9 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  static targets = [ "output" ]
+  static targets = ['sidebar'];
 
-  connect() {
-    this.outputTarget.textContent = 'Hello, Stimulus!'
+  launchToggle(){
+    this.toggleTarget.open();
   }
 }
