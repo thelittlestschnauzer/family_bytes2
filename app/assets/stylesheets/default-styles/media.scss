@@ -6,3 +6,21 @@
     margin-left: 0;
   }
 }
+
+@media screen and (min-width: 568px) {
+  header.recipe-nav {
+    flex-direction: row;
+    height: 100%;
+    margin: 0 210px 0 150px;
+    overflow: hidden;
+  }
+  .nav-logo {
+    padding: 22px 30px;
+  }
+  .nav {
+    flex-direction: row;
+    height: 100%;
+    margin: 0 210px 0 150px;
+    overflow: hidden;
+  }
+}

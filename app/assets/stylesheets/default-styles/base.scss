@@ -1,12 +1,13 @@
-body {
-  font-family: 'Abril Fatface', cursive;
-  background: #fafafa;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  background: #fff;
 }
 
-.wrapper {
-  display: flex;
-  width: 100%;
-  align-items: stretch;
+body {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 18px;
+  line-height: 1.75rem;
 }
 
 p {
@@ -23,61 +24,68 @@ a, a:hover, a:focus {
   transition: all 0.3s;
 }
 
-#sidebar {
-  min-width: 250px;
-  max-width: 250px;
-  height: 100vh;
-  background: #f2f2f2;
-  transition: all 0.3s;
-}
+// navbar styles
 
-#sidebar .sidebar-header {
-  padding: 20px;
-  background: #d24240;
-}
 
-#sidebar ul.components {
-  padding: 20px 0;
-  border-bottom: 1px solid #d24240;
-}
-
-#sidebar ul p {
-  padding: 10px;
-}
-
-#sidebar ul li a {
-  padding: 10px; 
-  font-size: 1.1em;
+nav {
   display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  border-bottom: 1px solid #f4f4f4f4;
+  z-index: 11;
 }
 
-#sidebar ul li a:hover {
-  color: #d24240;
+.navbar {
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  background: #fff;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-  color: #666666;
-}
-
-ul ul a {
-  font-size: 0.9em !important;
+.nav-item {
   font-family: 'Montserrat', sans-serif;
+  font-size: 0.6667rem;
+  line-height: 1rem;
   text-transform: uppercase;
-  padding-left: 30px !important;
+  letter-spacing: 0.08334rem;
 }
 
-#sidebar.active {
-  margin-left: -250px;
+.link-secondary-solid {
+  background-image: linear-gradient(180deg, #fff06b, #fff06b);
+  background-repeat: no-repeat;
+  background-position: 2px bottom;
+  background-size: 100% 10px;
 }
 
-a[data-toggle="collapse"] {
-  position: relative;
+.navbar-brand {
+  font-size: 22px;
+  color: #ea4934;
+  letter-spacing: 0.08334rem;
+  text-transform: uppercase;
 }
 
-.dropdown-toggle::after {
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
+.dropdown-item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6667rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08334rem;
+}
+
+.fa-search {
+  margin-right: 20px;
+}
+
+.input-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6667rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08334rem;
+}
+
+.search-button {
+  font-size: 12px;
+  text-transform: uppercase;
 }
