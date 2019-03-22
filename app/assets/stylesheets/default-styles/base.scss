@@ -62,7 +62,7 @@ nav {
   font-size: 22px;
   color: #ea4934;
   letter-spacing: 0.08334rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .dropdown-item {
@@ -88,4 +88,44 @@ nav {
 .search-button {
   font-size: 12px;
   text-transform: uppercase;
+}
+
+// login form
+
+#new_user, h2, .actions, .form-group, label {
+  background-color: #eceff4;
+}
+
+.login-form, .signup-form, .category-form {
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #f4f4f4;
+  width: 50%;
+  margin: auto;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #eceff4;
+}
+
+.login-header, .signup-header, .category-header {
+  background-color: #eceff4;
+  color: #d3434c;
+}
+
+.form-input {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.submit-button {
+  background-color: #9eccb0;
+  border-radius: 4px;
+  width: 30%;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.submit-button:hover {
+  background-color: #cfecd9;
 }
