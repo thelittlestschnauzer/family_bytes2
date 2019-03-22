@@ -1,0 +1,12 @@
+<div class="recipe-container">
+  <h2 class="recipe-title"><%= @recipe.title %></h2>
+  <p class="recipe-information">
+    <span class="recipe-serves">Yields: <%= @recipe.yields %> | Skill Level: <%= @recipe.level %></span>
+  </p>
+
+  <div class="row">
+    <div class="column hero-wrapper">
+      <%= image_tag @recipe.large, class: 'show-image' %>
+  </div>
+
+</div>

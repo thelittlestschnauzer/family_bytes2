@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 class="category-name"><%= @category.name %></h1>
+  
+</div>
+
+<section class="row">
+  <% @recipes.each do |recipe| %>
+  <div class="recipes-column">
+    <figure class="staticTiles clearfix">
+      <% if recipe.image.attached? %>
+        <%= image_tag recipe.thumbnail, class: 'images' %>
+      <% end %>
+      <figcaption class="staticTiles_item">
+        <p><%= link_to recipe.title, recipe_path(recipe) %></p>
+        <p>yields: <%= recipe.yields %></p>
+        <p>level: <%= recipe.level %></p>
+      </figcaption>
+    </figure>
+  </div>
+  <% end %>
+</section>

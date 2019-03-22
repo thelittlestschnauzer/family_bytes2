@@ -3,9 +3,13 @@
     <div class="recipe-form">
       <div class="recipe-header">
         <h3>Create a New Recipe</h3>
-      </div>
+      </div><br />
 
         <%= form_with model: @recipe do |form| %>
+
+          <span class="category-label">Select a chapter:</span>
+            <%= form.collection_select :category_id, Category.all, :id, :name %><br />
+            <br>
           <div class="form-group">
             <%= form.text_field :title, placeholder: 'title', class: 'form-control form-input' %>
           </div>
@@ -27,7 +31,7 @@
           </div>
 
           <div class="actions">
-            <%= form.submit 'Create' %>
+            <%= form.submit 'Create', class: 'submit-button' %>
           </div>
 
         <% end %>
